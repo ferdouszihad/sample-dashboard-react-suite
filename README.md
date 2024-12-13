@@ -1,8 +1,33 @@
-# React + Vite
+# React Suite Quick Start Guideline
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Basic installation
 
-Currently, two official plugins are available:
+1. Import react-suite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+npm install rsuite --save
+```
+
+2. Import CSS on main jsx
+
+```bash
+import 'rsuite/dist/rsuite.min.css';
+```
+
+### demo code with provider
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+ import { CustomProvider } from 'rsuite';
+import App from './App.tsx';
+import 'rsuite/styles/index.less';
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>  <CustomProvider theme="dark">
+      <App />
+   </CustomProvider>
+  </React.StrictMode>
+);
+);
+```
