@@ -1,6 +1,6 @@
 # React Suite Quick Start Guideline
 
-### Basic installation
+## Basic installation
 
 1. Import react-suite
 
@@ -28,6 +28,5 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <App />
    </CustomProvider>
   </React.StrictMode>
-);
 );
 ```
